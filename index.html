@@ -27,7 +27,7 @@
 
     var x = document.getElementById("headerpic").width;
     var y = document.getElementById("headerpic").height;
-
+    var counter = 0;
     <!-- MARKER 1 CODE -->
     var xPos = x/5.3;
     var yPos = y/2.5;
@@ -56,8 +56,11 @@
     document.getElementById("mark4").style.right=xPos+"px";
     document.getElementById("mark4").style.top=yPos+"px";
   
+    if(counter==0){
+      window.location.reload(true);
+      counter = 1;
+    } 
     
-    window.location.reload(true);
 
     </script>
 
