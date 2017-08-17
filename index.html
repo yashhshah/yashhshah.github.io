@@ -1,19 +1,77 @@
 <html>
 
-  <title>
+<link rel="stylesheet" type="text/css" href="style.css">
 
-    MY PERSONAL WEBSITE
-
-
-  </title>
+<body>
 
 
+  <img src="headerv3.png" alt="Website Header" id="headerpic" style="width:100%">
+  <a href="https://yashhshah.github.io/">
+  <img src="marker.png" alt="map marker 1" id="mark1" style="width:3%;height:5%">
+  </a>
+  <a href="https://yashhshah.github.io/">
+  <img src="marker.png" alt="map marker 2" id="mark2" style="width:3%;height:5%">
+  </a>
 
-  <h1>
-    WEBSITE UNDER CONSTRUCTION
+  <a href="https://yashhshah.github.io/">
+  <img src="marker.png" alt="map marker 3" id="mark3" style="width:3%;height:5%">
+</a>x
+
+  <a href="https://yashhshah.github.io/">
+  <img src="marker.png" alt="map marker 4" id="mark4" style="width:3%;height:5%">
+  </a>
 
 
-  </h1>
+  <script>
+
+
+    var x = document.getElementById("headerpic").width;
+    var y = document.getElementById("headerpic").height;
+
+    <!-- MARKER 1 CODE -->
+    var xPos = x/5.3;
+    var yPos = y/2.5;
+    document.getElementById('mark1').style.left=xPos+"px";
+    document.getElementById('mark1').style.top = yPos + "px";
+
+
+
+    <!-- MARKER 2 CODE -->
+    var xPos = x/2.3;
+    var yPos = y/2;
+    document.getElementById("mark2").style.right=xPos+"px";
+    document.getElementById("mark2").style.top=yPos+"px";
+
+
+    <!--MARKER 3 CODE -->
+    var xPos = x/1.22;
+    var yPos = y/1.87;
+    document.getElementById("mark3").style.right=xPos+"px";
+    document.getElementById("mark3").style.top=yPos+"px";
+
+
+    <!--MARKER 4 CODE -->
+    var xPos = x/4;
+    var yPos = y/1.38;
+    document.getElementById("mark4").style.right=xPos+"px";
+    document.getElementById("mark4").style.top=yPos+"px";
+
+
+    </script>
+
+
+
+
+
+</body>
+
+
+
+<footer>
+
+
+
+</footer>
 
 
 
