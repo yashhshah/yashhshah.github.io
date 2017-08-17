@@ -1,6 +1,6 @@
 
 #mark1{
-  position: absolute;
+  position: fixed;
 
 
 
@@ -9,7 +9,7 @@
 }
 
 #mark2{
-  position:absolute;
+  position:fixed;
 
 
 
@@ -17,14 +17,14 @@
 
 
 #mark3{
-  position:absolute;
+  position:fixed;
 
 
 
 }
 
 #mark4{
-  position:absolute;
+  position:fixed;
 
 
 
