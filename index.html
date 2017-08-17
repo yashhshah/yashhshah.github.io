@@ -20,11 +20,14 @@
   <a href="https://yashhshah.github.io/">
   <img src="marker.png" alt="map marker 4" id="mark4" style="width:3%;height:5%">
   </a>
-   
+
+  if(window.location.href.substr(-2) !== "?r") {
+ window.location = window.location.href + "?r";
+ }
 
   <script>
 
-      
+
 
 
     var x = document.getElementById("headerpic").width;
@@ -57,9 +60,9 @@
     var yPos = y/1.38;
     document.getElementById("mark4").style.right=xPos+"px";
     document.getElementById("mark4").style.top=yPos+"px";
-  
-  
-    
+
+
+
 
     </script>
 
