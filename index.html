@@ -23,14 +23,16 @@
 
 
 
-  <script>
+  <script type="text/javascript">
 
-
-
-
+  function getDimensions(){
     var x = document.getElementById("headerpic").width;
     var y = document.getElementById("headerpic").height;
-    var counter = 0;
+
+
+  }
+
+  function marker1(){
     <!-- MARKER 1 CODE -->
     var xPos = x/5.3;
     var yPos = y/2.5;
@@ -39,25 +41,61 @@
 
 
 
-    <!-- MARKER 2 CODE -->
-    var xPos = x/2.3;
-    var yPos = y/2;
-    document.getElementById("mark2").style.right=xPos+"px";
-    document.getElementById("mark2").style.top=yPos+"px";
+  }
 
 
-    <!--MARKER 3 CODE -->
-    var xPos = x/1.22;
-    var yPos = y/1.87;
-    document.getElementById("mark3").style.right=xPos+"px";
-    document.getElementById("mark3").style.top=yPos+"px";
 
 
-    <!--MARKER 4 CODE -->
-    var xPos = x/4;
-    var yPos = y/1.38;
-    document.getElementById("mark4").style.right=xPos+"px";
-    document.getElementById("mark4").style.top=yPos+"px";
+
+function marker2(){
+  <!-- MARKER 2 CODE -->
+  var xPos = x/2.3;
+  var yPos = y/2;
+  document.getElementById("mark2").style.right=xPos+"px";
+  document.getElementById("mark2").style.top=yPos+"px";
+
+
+
+
+}
+
+function marker3(){
+  <!--MARKER 3 CODE -->
+  var xPos = x/1.22;
+  var yPos = y/1.87;
+  document.getElementById("mark3").style.right=xPos+"px";
+  document.getElementById("mark3").style.top=yPos+"px";
+
+
+}
+
+
+function marker4(){
+  <!--MARKER 4 CODE -->
+  var xPos = x/4;
+  var yPos = y/1.38;
+  document.getElementById("mark4").style.right=xPos+"px";
+  document.getElementById("mark4").style.top=yPos+"px";
+
+
+
+}
+
+
+function start(){
+  getDimensions();
+  marker1();
+  marker2();
+  marker3();
+  marker4();
+
+
+}
+
+
+
+start();
+
 
 
 
