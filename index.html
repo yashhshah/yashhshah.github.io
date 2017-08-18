@@ -25,14 +25,13 @@
 
   <script type="text/javascript">
 
-  function getDimensions(){
-    var x = document.getElementById("headerpic").width;
-    var y = document.getElementById("headerpic").height;
 
 
-  }
 
-  function marker1(){
+
+
+
+  function marker1(x,y){
     <!-- MARKER 1 CODE -->
     var xPos = x/5.3;
     var yPos = y/2.5;
@@ -47,7 +46,7 @@
 
 
 
-function marker2(){
+function marker2(x,y){
   <!-- MARKER 2 CODE -->
   var xPos = x/2.3;
   var yPos = y/2;
@@ -59,7 +58,7 @@ function marker2(){
 
 }
 
-function marker3(){
+function marker3(x,y){
   <!--MARKER 3 CODE -->
   var xPos = x/1.22;
   var yPos = y/1.87;
@@ -70,7 +69,7 @@ function marker3(){
 }
 
 
-function marker4(){
+function marker4(x,y){
   <!--MARKER 4 CODE -->
   var xPos = x/4;
   var yPos = y/1.38;
@@ -83,11 +82,12 @@ function marker4(){
 
 
 function start(){
-  getDimensions();
-  marker1();
-  marker2();
-  marker3();
-  marker4();
+  var x = document.getElementById("headerpic").width;
+  var y = document.getElementById("headerpic").height;
+  marker1(x,y);
+  marker2(x,y);
+  marker3(x,y);
+  marker4(x,y);
 
 
 }
