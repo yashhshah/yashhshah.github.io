@@ -21,9 +21,7 @@
   <img src="marker.png" alt="map marker 4" id="mark4" style="width:3%;height:5%">
   </a>
 
-  if(window.location.href.substr(-2) !== "?r") {
- window.location = window.location.href + "?r";
- }
+
 
   <script>
 
@@ -67,7 +65,9 @@
     </script>
 
 
-
+    if(window.location.href.substr(-2) !== "?r") {
+   window.location = window.location.href + "?r";
+   }
 
 
 </body>
