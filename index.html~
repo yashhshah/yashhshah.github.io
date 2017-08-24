@@ -29,7 +29,7 @@
 
 
 
-$(window).on("load", function() {
+
 
   function marker1(x,y){
     <!-- MARKER 1 CODE -->
@@ -92,13 +92,13 @@ function start(){
 
 }
 
-
+$(window).on("load", function() {
 
 start();
 
 
 
-}
+});
 
     </script>
 
