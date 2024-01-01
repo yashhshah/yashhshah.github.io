@@ -21,6 +21,7 @@
 
         section {
             margin-bottom: 30px;
+            position: relative;
         }
 
         ul {
@@ -30,7 +31,23 @@
         }
 
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        ul li:after {
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: #333;
+            position: absolute;
+            left: -15px;
+            top: 0px;
+            z-index: 0;
+            margin-right: 10px;
+        }
+
+        ul li:last-child {
+            margin-bottom: 0;
         }
 
         footer {
@@ -76,7 +93,7 @@
                 <p>Dean's honors list</p>
             </li>
             <li>
-                <h3>Bachelors of Business Administation, Major in Finance </h3>
+                <h3>Bachelors of Business Administration, Major in Finance </h3>
                 <p>Wilfrid Laurier University | Sep 2017 - Apr 2022</p>
                 <p>High distinction</p>
             </li>
@@ -88,21 +105,22 @@
         <ul>
             <li>Anything AI</li>
             <li>Books</li>
-            <li>Novice Brazilian Jiu Jitsu practioner </li>
+            <li>Novice Brazilian Jiu-Jitsu practitioner </li>
             <li>Running and lifting</li>
             <li>Cooking mediocre food but eating out at good restaurants</li>
             <li>Meditating and practicing gratitude </li>
-            <li>Novice Yoga practioner</li>
-            <!-- Add more interests as needed -->
+            <li>Novice Yoga practitioner</li>
         </ul>
     </section>
 
     <section>
         <h2>Others</h2>
-        <p>My Linkedin is <a href="https://www.linkedin.com/in/yashshah99/"  target="_blank"> here </a> </p>
-        <p>My Twitter/X is <a href="https://twitter.com/yashhshah1999"  target="_blank"> here </a> </p>
-        <p>My Github is <a href="https://github.com/yashhshah"  target="_blank"> here </a> </p>
-        <p>This site was generated in < 10 min using GPT (Frontend engineering is my least favorite type)</p>
+        <ul>
+        <li>My Linkedin is <a href="https://www.linkedin.com/in/yashshah99/"  target="_blank"> here </a> </li>
+        <li>My Twitter/X is <a href="https://twitter.com/yashhshah1999"  target="_blank"> here </a> </li>
+        <li>My Github is <a href="https://github.com/yashhshah"  target="_blank"> here </a> </li>
+        <li>This site was generated in < 10 min using GPT (Frontend engineering is my least favorite type)</li>
+        </ul>
     </section>
 
 </body>
