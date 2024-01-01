@@ -1,122 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Shah</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
 
-<link rel="stylesheet" type="text/css" href="style.css">
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
 <body>
 
+    <header>
+        <h1>Yash Shah</h1>
+        <p>Software Engineer</p>
+    </header>
 
-  <img src="headerv3.png" alt="Website Header" id="headerpic" style="width:100%">
-  <a href="https://yashhshah.github.io/">
-  <img src="marker.png" alt="map marker 1" id="mark1" style="width:3%;height:5%">
-  </a>
-  <a href="https://yashhshah.github.io/">
-  <img src="marker.png" alt="map marker 2" id="mark2" style="width:3%;height:5%">
-  </a>
+    <section>
+        <h2>Work</h2>
+        <ul>
+            <li>
+                <h3>Software Engineer</h3>
+                <p>Asana | Sep 2022 - Present</p>
+                <p>Bazel builds, developer sandboxes, internal tooling</p>
+            </li>
+            <li>
+                <h3>Software Engineering Intern x5</h3>
+                <p>Meta, Asana, Wish.com, Opentext, University of Waterloo | Sep 2017 - Apr 2022</p>
+                <p>Full-stack web development, infrastructure engineering, ML engineering</p>
+            </li>
+        </ul>
+    </section>
 
-  <a href="./resume.pdf">
-  <img src="marker.png" alt="map marker 3" id="mark3" style="width:3%;height:5%">
-</a>x
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>Bachelors of Computer Science </h3>
+                <p>University of Waterloo | Sep 2017 - Apr 2022</p>
+                <p>Dean's honors list</p>
+            </li>
+            <li>
+                <h3>Bachelors of Business Administation, Major in Finance </h3>
+                <p>Wilfrid Laurier University | Sep 2017 - Apr 2022</p>
+                <p>High distinction</p>
+            </li>
+        </ul>
+    </section>
 
-  <a href="https://yashhshah.github.io/">
-  <img src="marker.png" alt="map marker 4" id="mark4" style="width:3%;height:5%">
-  </a>
+    <section>
+        <h2>Interests</h2>
+        <ul>
+            <li>Anything AI</li>
+            <li>Books</li>
+            <li>Novice Brazilian Jiu Jitsu practioner </li>
+            <li>Running and lifting</li>
+            <li>Cooking mediocre food but eating out at good restaurants</li>
+            <li>Meditating and practicing gratitude </li>
+            <li>Novice Yoga practioner</li>
+            <!-- Add more interests as needed -->
+        </ul>
+    </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-  <script type="text/javascript">
-
-
-
-
-
-
-  function marker1(x,y){
-    <!-- MARKER 1 CODE -->
-    var xPos = x/5.3;
-    var yPos = y/2.5;
-    document.getElementById('mark1').style.left=xPos+"px";
-    document.getElementById('mark1').style.top = yPos + "px";
-
-
-
-  }
-
-
-
-
-
-function marker2(x,y){
-  <!-- MARKER 2 CODE -->
-  var xPos = x/2.3;
-  var yPos = y/2;
-  document.getElementById("mark2").style.right=xPos+"px";
-  document.getElementById("mark2").style.top=yPos+"px";
-
-
-
-
-}
-
-function marker3(x,y){
-  <!--MARKER 3 CODE -->
-  var xPos = x/1.22;
-  var yPos = y/1.87;
-  document.getElementById("mark3").style.right=xPos+"px";
-  document.getElementById("mark3").style.top=yPos+"px";
-
-
-}
-
-
-function marker4(x,y){
-  <!--MARKER 4 CODE -->
-  var xPos = x/4;
-  var yPos = y/1.38;
-  document.getElementById("mark4").style.right=xPos+"px";
-  document.getElementById("mark4").style.top=yPos+"px";
-
-
-
-}
-
-
-function start(){
-  var x1 = document.getElementById("headerpic").width;
-  var y1 = document.getElementById("headerpic").height;
-  marker1(x1,y1);
-  marker2(x1,y1);
-  marker3(x1,y1);
-  marker4(x1,y1);
-
-
-}
-
-$(window).on("load", function() {
-
-start();
-
-
-
-});
-
-    </script>
-
-
-
-
+    <section>
+        <h2>Others</h2>
+        <p>My Linkedin is <a href="https://www.linkedin.com/in/yashshah99/"  target="_blank"> here </a> </p>
+        <p>My Twitter/X is <a href="https://twitter.com/yashhshah1999"  target="_blank"> here </a> </p>
+        <p>My Github is <a href="https://github.com/yashhshah"  target="_blank"> here </a> </p>
+        <p>This site was generated in < 10 min using GPT (Frontend engineering is my least favorite type)</p>
+    </section>
 
 </body>
-
-
-
-<footer>
-
-
-
-</footer>
-
-
-
-
 </html>
