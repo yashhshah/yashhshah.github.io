@@ -1,0 +1,7 @@
+# robots.txt for yashshah.ca
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yashshah.ca/sitemap.xml
+
