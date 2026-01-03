@@ -4,124 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Shah</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h1, h2, h3 {
-            margin-bottom: 10px;
-        }
-
-        section {
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        ul li {
-            margin-bottom: 20px;
-            position: relative;
-        }
-        ul li:after {
-            content: '';
-            width: 2px;
-            height: 100%;
-            background-color: #333;
-            position: absolute;
-            left: -15px;
-            top: 0px;
-            z-index: 0;
-            margin-right: 10px;
-        }
-
-        ul li:last-child {
-            margin-bottom: 0;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        footer p {
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Desktop Left Navigation -->
+    <nav class="toc">
+        <a href="#top" class="toc-logo">YS</a>
+        <div class="toc-links">
+            <a href="#work">
+                <span class="toc-number">01</span>
+                <span>Work</span>
+            </a>
+            <a href="#education">
+                <span class="toc-number">02</span>
+                <span>Education</span>
+            </a>
+            <a href="#interests">
+                <span class="toc-number">03</span>
+                <span>Interests</span>
+            </a>
+            <a href="#reading">
+                <span class="toc-number">04</span>
+                <span>Reading</span>
+            </a>
+        </div>
+        <div class="toc-footer">
+            <div class="toc-social">
+                <a href="https://www.linkedin.com/in/yashshah99/" target="_blank">Li</a>
+                <a href="https://twitter.com/yashhshah1999" target="_blank">X</a>
+                <a href="https://github.com/yashhshah" target="_blank">Gh</a>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <h1>Yash Shah</h1>
-        <p>Software Engineer</p>
-    </header>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="#top" class="mobile-nav-logo">Yash Shah</a>
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">Menu</button>
+        </div>
+        <div class="mobile-nav-links" id="mobileNavLinks">
+            <a href="#work" onclick="closeMobileNav()">
+                <span class="toc-number">01</span>
+                <span>Work</span>
+            </a>
+            <a href="#education" onclick="closeMobileNav()">
+                <span class="toc-number">02</span>
+                <span>Education</span>
+            </a>
+            <a href="#interests" onclick="closeMobileNav()">
+                <span class="toc-number">03</span>
+                <span>Interests</span>
+            </a>
+            <a href="#musings" onclick="closeMobileNav()">
+                <span class="toc-number">04</span>
+                <span>Musings</span>
+            </a>
+            <a href="#reading" onclick="closeMobileNav()">
+                <span class="toc-number">05</span>
+                <span>Reading</span>
+            </a>
+        </div>
+    </nav>
 
-    <section>
-        <h2>Work</h2>
-        <ul>
-            <li>
-                <h3>Software Engineer</h3>
-                <p>Asana | Sep 2022 - Present</p>
-                <p>Bazel builds, developer sandboxes, internal tooling</p>
-            </li>
-            <li>
-                <h3>Software Engineering Intern x5</h3>
-                <p>Meta, Asana, Wish.com, Opentext, University of Waterloo | Sep 2017 - Apr 2022</p>
-                <p>Full-stack web development, infrastructure engineering, ML engineering</p>
-            </li>
-        </ul>
-    </section>
+    <div class="layout">
+        <main class="main">
+            <div class="container">
+                <header id="top">
+                    <h1>Yash Shah</h1>
+                    <div class="divider"></div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/yashshah99/" target="_blank">LinkedIn ↗</a>
+                        <a href="https://twitter.com/yashhshah1999" target="_blank">X ↗</a>
+                        <a href="https://github.com/yashhshah" target="_blank">GitHub ↗</a>
+                    </div>
+                </header>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <h3>Bachelors of Computer Science </h3>
-                <p>University of Waterloo | Sep 2017 - Apr 2022</p>
-                <p>Dean's honors list</p>
-            </li>
-            <li>
-                <h3>Bachelors of Business Administration, Major in Finance </h3>
-                <p>Wilfrid Laurier University | Sep 2017 - Apr 2022</p>
-                <p>High distinction</p>
-            </li>
-        </ul>
-    </section>
+                <!-- ========== WORK SECTION ========== -->
+                <section id="work">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <h2>Work</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="item">
+                        <h3>Software Engineer</h3>
+                        <p class="meta">Asana <span>·</span> Sep 2022 → Present</p>
+                        <p>Bazel builds, developer sandboxes, internal tooling</p>
+                    </div>
+                    <div class="item">
+                        <h3>Software Engineering Intern × 5</h3>
+                        <p class="meta">Meta, Asana, Wish, Opentext, UWaterloo <span>·</span> 2017 – 2022</p>
+                        <p>Full-stack web development, infrastructure engineering, ML engineering</p>
+                    </div>
+                </section>
 
-    <section>
-        <h2>Interests</h2>
-        <ul>
-            <li>Anything AI</li>
-            <li>Books</li>
-            <li>Novice Brazilian Jiu-Jitsu practitioner </li>
-            <li>Running and lifting</li>
-            <li>Cooking mediocre food but eating out at good restaurants</li>
-            <li>Meditating and practicing gratitude </li>
-            <li>Novice Yoga practitioner</li>
-        </ul>
-    </section>
+                <!-- ========== EDUCATION SECTION ========== -->
+                <section id="education">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <h2>Education</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="item">
+                        <h3>M.Sc. Computer Science</h3>
+                        <p class="meta">Georgia Tech <span>·</span> 2026 – TBD</p>
+                        <p>Lets see if I finish this</p>
+                    </div>
+                    <div class="item">
+                        <h3>B.Sc. Computer Science</h3>
+                        <p class="meta">University of Waterloo <span>·</span> 2017 – 2022</p>
+                        <p>Dean's Honors List</p>
+                    </div>
+                    <div class="item">
+                        <h3>BBA, Major in Finance</h3>
+                        <p class="meta">Wilfrid Laurier University <span>·</span> 2017 – 2022</p>
+                        <p>High Distinction</p>
+                    </div>
+                </section>
 
-    <section>
-        <h2>Others</h2>
-        <ul>
-        <li>My Linkedin is <a href="https://www.linkedin.com/in/yashshah99/"  target="_blank"> here </a> </li>
-        <li>My Twitter/X is <a href="https://twitter.com/yashhshah1999"  target="_blank"> here </a> </li>
-        <li>My Github is <a href="https://github.com/yashhshah"  target="_blank"> here </a> </li>
-        <li>This site was generated in < 10 min using GPT (Frontend engineering is my least favorite type)</li>
-        </ul>
-    </section>
+                <!-- ========== INTERESTS SECTION ========== -->
+                <section id="interests">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <h2>Interests</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="pills">
+                        <span class="pill">Anything AI</span>
+                        <span class="pill">Books</span>
+                        <span class="pill">Brazilian Jiu-Jitsu</span>
+                        <span class="pill">Running</span>
+                        <span class="pill">Lifting</span>
+                        <span class="pill">Cooking (mediocre)</span>
+                        <span class="pill">Eating out (great restaurants)</span>
+                        <span class="pill">Meditation</span>
+                        <span class="pill">Yoga</span>
+                        <span class="pill">Gratitude practice</span>
+                    </div>
+                </section>
+                <!-- ========== READING SECTION ========== -->
+                <section id="reading">
+                    <div class="section-header">
+                        <span class="section-number">05</span>
+                        <h2>Recent Reads</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="books-container" id="booksContainer">
+                        <div class="books-loading">Loading books from Goodreads...</div>
+                    </div>
+                    <div class="goodreads-link">
+                        <a href="https://www.goodreads.com/user/show/92875108-yash-shah" target="_blank">View full reading list on Goodreads ↗</a>
+                    </div>
+                </section>
 
+                <footer>
+                    <p>Thanks Cursor, for helping me at things im bad at. New York City, New York, 2026.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
